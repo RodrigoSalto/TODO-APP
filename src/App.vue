@@ -8,7 +8,7 @@
       @keyup="handleEnter"
     />
     <ul className="list">
-      <li className="item" v-for="todo in todos.active" :key="todos.id">
+      <li className="item" v-for="todo in todos.active" :key="todo.id">
         <span>{{ todo.value }}</span>
         <div className="item-buttons">
           <button className="remove-button" @click="removeTodo(todo.id, true)">
